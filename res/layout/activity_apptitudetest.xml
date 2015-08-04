@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+    
+    
+    <RelativeLayout 
+    android:id="@+id/header"
+    android:layout_width="match_parent" 
+    android:layout_height="45dp" 
+    android:weightSum="4" 
+    android:background="#70DCDC"
+    android:layout_alignParentTop="true">
+     
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:text ="Apptitude Test"
+        android:layout_height="45dp"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:shadowColor="#000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic" />
+    
+    
+    
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+        
+    <RelativeLayout 
+    android:layout_width="match_parent" 
+    android:layout_height="40dp" 
+    android:weightSum="4" 
+    android:background="#70DCDC"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:weightSum="4" 
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/border_top"
+    android:layout_alignParentTop="true"
+    >
+    
+        
+        <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="1" />
+
+    </RelativeLayout>
+        
+        
+    </RelativeLayout>
+    
+    
+    
+    
+
+
+<ScrollView 
+    android:id="@+id/center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   <View
+  		android:layout_width="match_parent"
+  		android:layout_height="20dp"/>
+    
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select any 8 options:"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+  		android:layout_width="1dp"
+  		android:layout_height="15dp"
+  		android:layout_weight="1"/>
+    
+ <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+        <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Farming" />
+        
+        <CheckBox
+        android:id="@+id/chk2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Advanced Math" />
+        
+        
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Being in play" />
+        
+        <CheckBox
+        android:id="@+id/chk4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Studying people in other lands" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk5"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Talking to people at party" />
+        
+        <CheckBox
+        android:id="@+id/chk6"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Word processing" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk7"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Auto mechanic" />
+        
+        <CheckBox
+        android:id="@+id/chk8"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Astronomy" />
+          
+	</LinearLayout>
+	
+    <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk9"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Draw or paint" />
+        
+        <CheckBox
+        android:id="@+id/chk10"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Go to church" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk11"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Work on sales campaign" />
+        
+        <CheckBox
+        android:id="@+id/chk12"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Use a cash register" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk13"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+         android:checked="false"
+        android:text="Carpentry" />
+        
+        <CheckBox
+        android:id="@+id/chk14"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Physics" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk15"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Foreign language" />
+        
+        <CheckBox
+        android:id="@+id/chk16"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Teaching" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk17"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Buying clothes for a store" />
+        
+        <CheckBox
+        android:id="@+id/chk18"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Working from nine to five" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk19"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Setting type for a printing" />
+        
+        <CheckBox
+        android:id="@+id/chk20"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Using a chemistry tool" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk21"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Reading art and music magazine" />
+        
+        <CheckBox
+        android:id="@+id/chk22"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Helping people solve personal problem " />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk23"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Selling life insurance" />
+        
+        <CheckBox
+        android:id="@+id/chk24"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Type reports" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk25"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Drive a truck" />
+        
+        <CheckBox
+        android:id="@+id/chk26"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Work in a lab" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk27"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Musicians" />
+        
+        <CheckBox
+        android:id="@+id/chk28"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Making new friends" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk29"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Leaders" />
+        
+        <CheckBox
+        android:id="@+id/chk30"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Following a budget" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk31"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Fixing electrical appliances" />
+        
+        <CheckBox
+        android:id="@+id/chk32"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Build rocket model" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk33"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Creative writing" />
+        
+        <CheckBox
+        android:id="@+id/chk34"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Attending sports events" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk35"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Being elected class president" />
+        
+        <CheckBox
+        android:id="@+id/chk36"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Using business machines" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk37"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Building things" />
+        
+        <CheckBox
+        android:id="@+id/chk38"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Doing puzzles" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk39"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Fashion design" />
+        
+        <CheckBox
+        android:id="@+id/chk40"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Belonging to a club" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk41"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Giving speeches" />
+        
+        <CheckBox
+        android:id="@+id/chk42"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Keeping detailed records" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk43"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Wildlife biology" />
+        
+        <CheckBox
+        android:id="@+id/chk44"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Being in a science fair" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk45"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Going to concerts" />
+        
+        <CheckBox
+        android:id="@+id/chk46"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Working with old people" />
+          
+	</LinearLayout>
+	
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="2dp"
+  		android:layout_weight="1"/>
+    
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+        
+        <CheckBox
+        android:id="@+id/chk47"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="Sales people" />
+        
+        <CheckBox
+        android:id="@+id/chk48"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.5"
+         android:checked="false"
+         android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:text="File letters and reports" />
+          
+	</LinearLayout>
+   
+   
+   
+   <Button
+        android:id="@+id/etsubmit"
+        android:text="Submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="Aparajita"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.05"
+        android:background="@drawable/mybutton"/>
+   
+   <View
+  		android:layout_width="1dp"
+  		android:layout_height="10dp"
+  		android:layout_weight="1"/>
+   </LinearLayout>
+</ScrollView>
+   
+   
+   
+   
+   
+   
+   
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="option_category">
+        
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Maths</item>
+        <item>Computers</item>
+        <item>Accounting</item>
+        <item>Economics</item>
+        <item>Arts</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mehran</string>
+    <string name="action_settings">Settings</string>
+    <string name="Status">Not login</string>
+    <string name="Role">Not assigned</string>
+
+</resources>

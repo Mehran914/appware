@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="option_grade">
+        
+        <item>Middle level</item>
+        <item>10th level</item>
+        <item>12th level</item>
+        <item>Bachelor</item>
+    </string-array>
+</resources>

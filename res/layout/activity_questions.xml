@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+    
+    <RelativeLayout 
+    android:id="@+id/header"
+    android:layout_width="match_parent" 
+    android:layout_height="45dp" 
+    android:weightSum="4" 
+    android:background="#70DCDC"
+    android:layout_alignParentTop="true">
+     
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:src="@drawable/logosmall" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:text ="Career Counselor"
+        android:layout_height="45dp"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:shadowColor="#000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+        
+    <RelativeLayout 
+    android:layout_width="match_parent" 
+    android:layout_height="40dp" 
+    android:weightSum="4" 
+    android:background="#70DCDC"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:weightSum="4" 
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/border_top"
+    android:layout_alignParentTop="true"
+    >
+    
+        
+        <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="1" />
+
+    </RelativeLayout>
+        
+        
+    </RelativeLayout>
+    
+    
+    <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header">
+    
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    
+        
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer the following Question:"
+        android:fontFamily="Aparajita"
+        android:textColor="#808080"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <View
+  		android:layout_width="1dp"
+  		android:layout_height="15dp"
+  		android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="Aparajita"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+        <View
+  		android:layout_width="1dp"
+  		android:layout_height="10dp"
+  		android:layout_weight="1"/>
+
+        
+        
+        <RadioGroup
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Aparajita"
+            android:textColor="#808080"
+            android:textSize="15dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Aparajita"
+            android:textColor="#808080"
+            android:textSize="15dp"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Aparajita"
+            android:textColor="#808080"
+            android:textSize="15dp"
+            android:text="" />
+
+        
+        </RadioGroup>
+         <View
+  		android:layout_width="1dp"
+  		android:layout_height="30dp"
+  		android:layout_weight="1"/>
+         
+         
+         <Button
+        android:id="@+id/Next"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="0.05"
+        android:background="@drawable/mybutton" />
+         
+         
+         <View
+  		android:layout_width="1dp"
+  		android:layout_height="3dp"
+  		android:layout_weight="1"/>
+         
+         <Button
+        android:id="@+id/Finish"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="0.05"
+        android:background="@drawable/mybutton" />
+         
+         <View
+  		android:layout_width="1dp"
+  		android:layout_height="3dp"
+  		android:layout_weight="1"/>
+        
+    </LinearLayout>
+    
+    </ScrollView>
+    
+</RelativeLayout>
